@@ -26,15 +26,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/console/prompt"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/internal/jsre"
-	"github.com/ethereum/go-ethereum/miner"
-	"github.com/ethereum/go-ethereum/node"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/consensus/ethash"
+	"github.com/lifefile/life-file/console/prompt"
+	"github.com/lifefile/life-file/core"
+	"github.com/lifefile/life-file/eth"
+	"github.com/lifefile/life-file/eth/ethconfig"
+	"github.com/lifefile/life-file/internal/jsre"
+	"github.com/lifefile/life-file/miner"
+	"github.com/lifefile/life-file/node"
 )
 
 const (

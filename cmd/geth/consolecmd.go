@@ -22,10 +22,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/console"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/lifefile/life-file/cmd/utils"
+	"github.com/lifefile/life-file/console"
+	"github.com/lifefile/life-file/node"
+	"github.com/lifefile/life-file/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

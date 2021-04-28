@@ -22,13 +22,13 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/internal/utesting"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/rlpx"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/lifefile/life-file/core/types"
+	"github.com/lifefile/life-file/crypto"
+	"github.com/lifefile/life-file/eth/protocols/eth"
+	"github.com/lifefile/life-file/internal/utesting"
+	"github.com/lifefile/life-file/p2p"
+	"github.com/lifefile/life-file/p2p/rlpx"
+	"github.com/lifefile/life-file/rlp"
 )
 
 type Message interface {

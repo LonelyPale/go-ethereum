@@ -21,17 +21,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/clique"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/consensus/clique"
+	"github.com/lifefile/life-file/core"
+	"github.com/lifefile/life-file/core/rawdb"
+	"github.com/lifefile/life-file/core/state"
+	"github.com/lifefile/life-file/core/types"
+	"github.com/lifefile/life-file/core/vm"
+	"github.com/lifefile/life-file/eth/downloader"
+	"github.com/lifefile/life-file/ethdb/memorydb"
+	"github.com/lifefile/life-file/event"
+	"github.com/lifefile/life-file/trie"
 )
 
 type mockBackend struct {

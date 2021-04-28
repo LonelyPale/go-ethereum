@@ -20,11 +20,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/core/types"
+	"github.com/lifefile/life-file/log"
+	"github.com/lifefile/life-file/rlp"
+	"github.com/lifefile/life-file/trie"
 )
 
 // handleGetBlockHeaders handles Block header query, collect the requested headers and reply

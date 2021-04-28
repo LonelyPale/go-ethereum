@@ -20,10 +20,10 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/common/hexutil"
+	"github.com/lifefile/life-file/internal/ethapi"
+	"github.com/lifefile/life-file/log"
 )
 
 type AuditLogger struct {

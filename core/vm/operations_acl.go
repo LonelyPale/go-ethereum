@@ -19,9 +19,9 @@ package vm
 import (
 	"errors"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/common/math"
+	"github.com/lifefile/life-file/params"
 )
 
 const (

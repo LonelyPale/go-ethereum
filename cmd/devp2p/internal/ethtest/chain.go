@@ -26,11 +26,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/forkid"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/lifefile/life-file/core"
+	"github.com/lifefile/life-file/core/forkid"
+	"github.com/lifefile/life-file/core/types"
+	"github.com/lifefile/life-file/params"
+	"github.com/lifefile/life-file/rlp"
 )
 
 type Chain struct {

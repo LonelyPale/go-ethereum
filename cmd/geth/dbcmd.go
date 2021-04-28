@@ -24,14 +24,14 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/console/prompt"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/lifefile/life-file/cmd/utils"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/common/hexutil"
+	"github.com/lifefile/life-file/console/prompt"
+	"github.com/lifefile/life-file/core/rawdb"
+	"github.com/lifefile/life-file/ethdb"
+	"github.com/lifefile/life-file/log"
+	"github.com/lifefile/life-file/trie"
 	"gopkg.in/urfave/cli.v1"
 )
 

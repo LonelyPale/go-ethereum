@@ -25,15 +25,15 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/accounts/scwallet"
-	"github.com/ethereum/go-ethereum/accounts/usbwallet"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/signer/storage"
+	"github.com/lifefile/life-file/accounts"
+	"github.com/lifefile/life-file/accounts/keystore"
+	"github.com/lifefile/life-file/accounts/scwallet"
+	"github.com/lifefile/life-file/accounts/usbwallet"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/common/hexutil"
+	"github.com/lifefile/life-file/internal/ethapi"
+	"github.com/lifefile/life-file/log"
+	"github.com/lifefile/life-file/signer/storage"
 )
 
 const (

@@ -23,13 +23,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/consensus/ethash"
+	"github.com/lifefile/life-file/core"
+	"github.com/lifefile/life-file/core/rawdb"
+	"github.com/lifefile/life-file/core/types"
+	"github.com/lifefile/life-file/core/vm"
+	"github.com/lifefile/life-file/params"
 )
 
 type testTxRelay struct {

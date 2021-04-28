@@ -20,15 +20,15 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/lifefile/life-file/consensus/ethash"
+	"github.com/lifefile/life-file/core"
+	"github.com/lifefile/life-file/core/rawdb"
+	"github.com/lifefile/life-file/core/types"
+	"github.com/lifefile/life-file/crypto"
+	"github.com/lifefile/life-file/eth"
+	"github.com/lifefile/life-file/eth/ethconfig"
+	"github.com/lifefile/life-file/node"
+	"github.com/lifefile/life-file/params"
 )
 
 var (

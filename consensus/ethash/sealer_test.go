@@ -26,10 +26,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/internal/testlog"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/core/types"
+	"github.com/lifefile/life-file/internal/testlog"
+	"github.com/lifefile/life-file/log"
 )
 
 // Tests whether remote HTTP servers are correctly notified of new work.

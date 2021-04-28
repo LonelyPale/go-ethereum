@@ -24,16 +24,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/asm"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/lifefile/life-file/accounts/abi"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/consensus"
+	"github.com/lifefile/life-file/core"
+	"github.com/lifefile/life-file/core/asm"
+	"github.com/lifefile/life-file/core/rawdb"
+	"github.com/lifefile/life-file/core/state"
+	"github.com/lifefile/life-file/core/types"
+	"github.com/lifefile/life-file/core/vm"
+	"github.com/lifefile/life-file/params"
 )
 
 func TestDefaults(t *testing.T) {
@@ -611,7 +611,7 @@ func TestEip2929Cases(t *testing.T) {
 
 // TestColdAccountAccessCost test that the cold account access cost is reported
 // correctly
-// see: https://github.com/ethereum/go-ethereum/issues/22649
+// see: https://github.com/lifefile/life-file/issues/22649
 func TestColdAccountAccessCost(t *testing.T) {
 	for i, tc := range []struct {
 		code []byte

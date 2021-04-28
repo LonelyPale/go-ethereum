@@ -20,12 +20,12 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/ethereum/go-ethereum/cmd/devp2p/internal/ethtest"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/internal/utesting"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/rlpx"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/lifefile/life-file/cmd/devp2p/internal/ethtest"
+	"github.com/lifefile/life-file/crypto"
+	"github.com/lifefile/life-file/internal/utesting"
+	"github.com/lifefile/life-file/p2p"
+	"github.com/lifefile/life-file/p2p/rlpx"
+	"github.com/lifefile/life-file/rlp"
 	"gopkg.in/urfave/cli.v1"
 )
 

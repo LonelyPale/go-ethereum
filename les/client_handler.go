@@ -23,16 +23,16 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/core/forkid"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/light"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/common/mclock"
+	"github.com/lifefile/life-file/core/forkid"
+	"github.com/lifefile/life-file/core/types"
+	"github.com/lifefile/life-file/eth/downloader"
+	"github.com/lifefile/life-file/eth/protocols/eth"
+	"github.com/lifefile/life-file/light"
+	"github.com/lifefile/life-file/log"
+	"github.com/lifefile/life-file/p2p"
+	"github.com/lifefile/life-file/params"
 )
 
 // clientHandler is responsible for receiving and processing all incoming server

@@ -28,12 +28,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/internal/testlog"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/discover/v5wire"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/lifefile/life-file/internal/testlog"
+	"github.com/lifefile/life-file/log"
+	"github.com/lifefile/life-file/p2p/discover/v5wire"
+	"github.com/lifefile/life-file/p2p/enode"
+	"github.com/lifefile/life-file/p2p/enr"
+	"github.com/lifefile/life-file/rlp"
 )
 
 // Real sockets, real crypto: this test checks end-to-end connectivity for UDPv5.

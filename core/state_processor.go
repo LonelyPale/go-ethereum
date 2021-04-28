@@ -19,14 +19,14 @@ package core
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/consensus/misc"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/consensus"
+	"github.com/lifefile/life-file/consensus/misc"
+	"github.com/lifefile/life-file/core/state"
+	"github.com/lifefile/life-file/core/types"
+	"github.com/lifefile/life-file/core/vm"
+	"github.com/lifefile/life-file/crypto"
+	"github.com/lifefile/life-file/params"
 )
 
 // StateProcessor is a basic Processor, which takes care of transitioning

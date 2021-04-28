@@ -23,13 +23,13 @@ import (
 	"io/ioutil"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/external"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/lifefile/life-file/accounts"
+	"github.com/lifefile/life-file/accounts/external"
+	"github.com/lifefile/life-file/accounts/keystore"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/core/types"
+	"github.com/lifefile/life-file/crypto"
+	"github.com/lifefile/life-file/log"
 )
 
 // ErrNoChainID is returned whenever the user failed to specify a chain id.

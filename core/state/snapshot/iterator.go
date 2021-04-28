@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/core/rawdb"
+	"github.com/lifefile/life-file/ethdb"
 )
 
 // Iterator is an iterator to step over all the accounts or the specific

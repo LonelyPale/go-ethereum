@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/nat"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/lifefile/life-file/p2p"
+	"github.com/lifefile/life-file/p2p/nat"
+	"github.com/lifefile/life-file/rpc"
 )
 
 const (

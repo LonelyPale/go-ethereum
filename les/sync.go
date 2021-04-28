@@ -21,12 +21,12 @@ import (
 	"errors"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/light"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/core/rawdb"
+	"github.com/lifefile/life-file/eth/downloader"
+	"github.com/lifefile/life-file/light"
+	"github.com/lifefile/life-file/log"
+	"github.com/lifefile/life-file/params"
 )
 
 var errInvalidCheckpoint = errors.New("invalid advertised checkpoint")

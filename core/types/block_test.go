@@ -23,11 +23,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/lifefile/life-file/common"
+	"github.com/lifefile/life-file/common/math"
+	"github.com/lifefile/life-file/crypto"
+	"github.com/lifefile/life-file/params"
+	"github.com/lifefile/life-file/rlp"
 	"golang.org/x/crypto/sha3"
 )
 
