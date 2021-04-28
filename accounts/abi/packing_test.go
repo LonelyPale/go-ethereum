@@ -676,7 +676,7 @@ var packUnpackTests = []packUnpackTest{
 			"476f2d657468657265756d000000000000000000000000000000000000000000" +
 			"0000000000000000000000000000000000000000000000000000000000000008" +
 			"457468657265756d000000000000000000000000000000000000000000000000",
-		unpacked: [4]string{"Hello", "World", "Go-ethereum", "Ethereum"},
+		unpacked: [4]string{"Hello", "World", "life-file", "Ethereum"},
 	},
 	{
 		def: `[{"type": "string[]"}]`,
