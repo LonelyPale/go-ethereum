@@ -36,7 +36,7 @@ type assembleBlockParamsMarshaling struct {
 
 //go:generate go run github.com/fjl/gencodec -type executableData -field-override executableDataMarshaling -out gen_ed.go
 
-// Structure described at https://notes.ethereum.org/@n0ble/rayonism-the-merge-spec#Parameters1
+// Structure described at https://notes.lifefile.org/@n0ble/rayonism-the-merge-spec#Parameters1
 type executableData struct {
 	BlockHash    common.Hash    `json:"blockHash"     gencodec:"required"`
 	ParentHash   common.Hash    `json:"parentHash"    gencodec:"required"`
