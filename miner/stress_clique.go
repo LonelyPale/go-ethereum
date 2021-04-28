@@ -61,7 +61,7 @@ func main() {
 	genesis := makeGenesis(faucets, sealers)
 
 	var (
-		nodes  []*eth.Ethereum
+		nodes  []*eth.LifeFile
 		enodes []*enode.Node
 	)
 
@@ -165,8 +165,8 @@ func makeGenesis(faucets []*ecdsa.PrivateKey, sealers []*ecdsa.PrivateKey) *core
 	return genesis
 }
 
-func makeSealer(genesis *core.Genesis) (*node.Node, *eth.Ethereum, error) {
-	// Define the basic configurations for the Ethereum node
+func makeSealer(genesis *core.Genesis) (*node.Node, *eth.LifeFile, error) {
+	// Define the basic configurations for the LifeFile node
 	datadir, _ := ioutil.TempDir("", "")
 
 	config := &node.Config{
@@ -179,7 +179,7 @@ func makeSealer(genesis *core.Genesis) (*node.Node, *eth.Ethereum, error) {
 			MaxPeers:    25,
 		},
 	}
-	// Start the node and configure a full Ethereum node on it
+	// Start the node and configure a full LifeFile node on it
 	stack, err := node.New(config)
 	if err != nil {
 		return nil, nil, err

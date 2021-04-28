@@ -16,7 +16,7 @@
 
 // Package geth contains the simplified mobile APIs to life-file.
 //
-// The scope of this package is *not* to allow writing a custom Ethereum client
+// The scope of this package is *not* to allow writing a custom LifeFile client
 // with pieces plucked from life-file, rather to allow writing native dapps on
 // mobile platforms. Keep this in mind when using or extending this package!
 //

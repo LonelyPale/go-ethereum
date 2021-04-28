@@ -22,7 +22,7 @@ import (
 	"github.com/lifefile/life-file/common"
 )
 
-// LegacyTx is the transaction data of regular Ethereum transactions.
+// LegacyTx is the transaction data of regular LifeFile transactions.
 type LegacyTx struct {
 	Nonce    uint64          // nonce of sender account
 	GasPrice *big.Int        // wei per gas

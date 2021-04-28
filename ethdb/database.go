@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the life-file library. If not, see <http://www.gnu.org/licenses/>.
 
-// Package ethdb defines the interfaces for an Ethereum data store.
+// Package ethdb defines the interfaces for an LifeFile data store.
 package ethdb
 
 import "io"

@@ -40,14 +40,14 @@ import (
 	"github.com/lifefile/life-file/trie"
 )
 
-// PublicEthereumAPI provides an API to access Ethereum full node-related
+// PublicEthereumAPI provides an API to access LifeFile full node-related
 // information.
 type PublicEthereumAPI struct {
-	e *Ethereum
+	e *LifeFile
 }
 
-// NewPublicEthereumAPI creates a new Ethereum protocol API for full nodes.
-func NewPublicEthereumAPI(e *Ethereum) *PublicEthereumAPI {
+// NewPublicEthereumAPI creates a new LifeFile protocol API for full nodes.
+func NewPublicEthereumAPI(e *LifeFile) *PublicEthereumAPI {
 	return &PublicEthereumAPI{e}
 }
 
@@ -64,11 +64,11 @@ func (api *PublicEthereumAPI) Coinbase() (common.Address, error) {
 // PublicMinerAPI provides an API to control the miner.
 // It offers only methods that operate on data that pose no security risk when it is publicly accessible.
 type PublicMinerAPI struct {
-	e *Ethereum
+	e *LifeFile
 }
 
 // NewPublicMinerAPI create a new PublicMinerAPI instance.
-func NewPublicMinerAPI(e *Ethereum) *PublicMinerAPI {
+func NewPublicMinerAPI(e *LifeFile) *PublicMinerAPI {
 	return &PublicMinerAPI{e}
 }
 
@@ -80,11 +80,11 @@ func (api *PublicMinerAPI) Mining() bool {
 // PrivateMinerAPI provides private RPC methods to control the miner.
 // These methods can be abused by external users and must be considered insecure for use by untrusted users.
 type PrivateMinerAPI struct {
-	e *Ethereum
+	e *LifeFile
 }
 
 // NewPrivateMinerAPI create a new RPC service which controls the miner of this node.
-func NewPrivateMinerAPI(e *Ethereum) *PrivateMinerAPI {
+func NewPrivateMinerAPI(e *LifeFile) *PrivateMinerAPI {
 	return &PrivateMinerAPI{e: e}
 }
 
@@ -135,15 +135,15 @@ func (api *PrivateMinerAPI) SetRecommitInterval(interval int) {
 	api.e.Miner().SetRecommitInterval(time.Duration(interval) * time.Millisecond)
 }
 
-// PrivateAdminAPI is the collection of Ethereum full node-related APIs
+// PrivateAdminAPI is the collection of LifeFile full node-related APIs
 // exposed over the private admin endpoint.
 type PrivateAdminAPI struct {
-	eth *Ethereum
+	eth *LifeFile
 }
 
 // NewPrivateAdminAPI creates a new API definition for the full node private
-// admin methods of the Ethereum service.
-func NewPrivateAdminAPI(eth *Ethereum) *PrivateAdminAPI {
+// admin methods of the LifeFile service.
+func NewPrivateAdminAPI(eth *LifeFile) *PrivateAdminAPI {
 	return &PrivateAdminAPI{eth: eth}
 }
 
@@ -245,15 +245,15 @@ func (api *PrivateAdminAPI) ImportChain(file string) (bool, error) {
 	return true, nil
 }
 
-// PublicDebugAPI is the collection of Ethereum full node APIs exposed
+// PublicDebugAPI is the collection of LifeFile full node APIs exposed
 // over the public debugging endpoint.
 type PublicDebugAPI struct {
-	eth *Ethereum
+	eth *LifeFile
 }
 
 // NewPublicDebugAPI creates a new API definition for the full node-
-// related public debug methods of the Ethereum service.
-func NewPublicDebugAPI(eth *Ethereum) *PublicDebugAPI {
+// related public debug methods of the LifeFile service.
+func NewPublicDebugAPI(eth *LifeFile) *PublicDebugAPI {
 	return &PublicDebugAPI{eth: eth}
 }
 
@@ -282,15 +282,15 @@ func (api *PublicDebugAPI) DumpBlock(blockNr rpc.BlockNumber) (state.Dump, error
 	return stateDb.RawDump(false, false, true), nil
 }
 
-// PrivateDebugAPI is the collection of Ethereum full node APIs exposed over
+// PrivateDebugAPI is the collection of LifeFile full node APIs exposed over
 // the private debugging endpoint.
 type PrivateDebugAPI struct {
-	eth *Ethereum
+	eth *LifeFile
 }
 
 // NewPrivateDebugAPI creates a new API definition for the full node-related
-// private debug methods of the Ethereum service.
-func NewPrivateDebugAPI(eth *Ethereum) *PrivateDebugAPI {
+// private debug methods of the LifeFile service.
+func NewPrivateDebugAPI(eth *LifeFile) *PrivateDebugAPI {
 	return &PrivateDebugAPI{eth: eth}
 }
 

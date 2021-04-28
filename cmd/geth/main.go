@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with life-file. If not, see <http://www.gnu.org/licenses/>.
 
-// geth is the official command-line client for Ethereum.
+// geth is the official command-line client for LifeFile.
 package main
 
 import (
@@ -282,7 +282,7 @@ func prepare(ctx *cli.Context) {
 		log.Info("Starting Geth in ephemeral dev mode...")
 
 	case !ctx.GlobalIsSet(utils.NetworkIdFlag.Name):
-		log.Info("Starting Geth on Ethereum mainnet...")
+		log.Info("Starting Geth on LifeFile mainnet...")
 	}
 	// If we're a full node on mainnet without --cache specified, bump default cache allowance
 	if ctx.GlobalString(utils.SyncModeFlag.Name) != "light" && !ctx.GlobalIsSet(utils.CacheFlag.Name) && !ctx.GlobalIsSet(utils.NetworkIdFlag.Name) {
@@ -405,7 +405,7 @@ func startNode(ctx *cli.Context, stack *node.Node, backend ethapi.Backend) {
 
 	// Start auxiliary services if enabled
 	if ctx.GlobalBool(utils.MiningEnabledFlag.Name) || ctx.GlobalBool(utils.DeveloperFlag.Name) {
-		// Mining only makes sense if a full Ethereum node is running
+		// Mining only makes sense if a full LifeFile node is running
 		if ctx.GlobalString(utils.SyncModeFlag.Name) == "light" {
 			utils.Fatalf("Light clients do not support mining")
 		}

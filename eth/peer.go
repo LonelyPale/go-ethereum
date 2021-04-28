@@ -28,7 +28,7 @@ import (
 // ethPeerInfo represents a short summary of the `eth` sub-protocol metadata known
 // about a connected peer.
 type ethPeerInfo struct {
-	Version    uint     `json:"version"`    // Ethereum protocol version negotiated
+	Version    uint     `json:"version"`    // LifeFile protocol version negotiated
 	Difficulty *big.Int `json:"difficulty"` // Total difficulty of the peer's blockchain
 	Head       string   `json:"head"`       // Hex hash of the peer's best owned block
 }

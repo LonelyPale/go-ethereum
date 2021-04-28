@@ -36,7 +36,7 @@ import (
 )
 
 // Register adds catalyst APIs to the node.
-func Register(stack *node.Node, backend *eth.Ethereum) error {
+func Register(stack *node.Node, backend *eth.LifeFile) error {
 	chainconfig := backend.BlockChain().Config()
 	if chainconfig.CatalystBlock == nil {
 		return errors.New("catalystBlock is not set in genesis config")
@@ -57,10 +57,10 @@ func Register(stack *node.Node, backend *eth.Ethereum) error {
 }
 
 type consensusAPI struct {
-	eth *eth.Ethereum
+	eth *eth.LifeFile
 }
 
-func newConsensusAPI(eth *eth.Ethereum) *consensusAPI {
+func newConsensusAPI(eth *eth.LifeFile) *consensusAPI {
 	return &consensusAPI{eth: eth}
 }
 

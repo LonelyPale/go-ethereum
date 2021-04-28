@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the life-file library. If not, see <http://www.gnu.org/licenses/>.
 
-// Package bind generates Ethereum contract Go bindings.
+// Package bind generates LifeFile contract Go bindings.
 //
 // Detailed usage document and tutorial available on the life-file Wiki page:
 // https://github.com/lifefile/life-file/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts

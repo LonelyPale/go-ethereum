@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the life-file library. If not, see <http://www.gnu.org/licenses/>.
 
-// Packagelifefile.defines interfaces for interacting with Ethereum.
+// Packagelifefile.defines interfaces for interacting with LifeFile.
 package lifefile
 
 import (
@@ -96,7 +96,7 @@ type ChainStateReader interface {
 }
 
 // SyncProgress gives progress indications when the node is synchronising with
-// the Ethereum network.
+// the LifeFile network.
 type SyncProgress struct {
 	StartingBlock uint64 // Block number where sync began
 	CurrentBlock  uint64 // Current block number where sync is at

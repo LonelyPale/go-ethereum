@@ -35,7 +35,7 @@ import (
 // are attempted to be reexecuted to generate the desired state. The optional
 // base layer statedb can be passed then it's regarded as the statedb of the
 // parent block.
-func (eth *Ethereum) stateAtBlock(block *types.Block, reexec uint64, base *state.StateDB, checkLive bool) (statedb *state.StateDB, err error) {
+func (eth *LifeFile) stateAtBlock(block *types.Block, reexec uint64, base *state.StateDB, checkLive bool) (statedb *state.StateDB, err error) {
 	var (
 		current  *types.Block
 		database state.Database
@@ -139,7 +139,7 @@ func (eth *Ethereum) stateAtBlock(block *types.Block, reexec uint64, base *state
 }
 
 // stateAtTransaction returns the execution environment of a certain transaction.
-func (eth *Ethereum) stateAtTransaction(block *types.Block, txIndex int, reexec uint64) (core.Message, vm.BlockContext, *state.StateDB, error) {
+func (eth *LifeFile) stateAtTransaction(block *types.Block, txIndex int, reexec uint64) (core.Message, vm.BlockContext, *state.StateDB, error) {
 	// Short circuit if it's genesis block.
 	if block.NumberU64() == 0 {
 		return nil, vm.BlockContext{}, nil, errors.New("no transaction in genesis")

@@ -49,10 +49,10 @@ type NodeConfig struct {
 	// set to zero, then only the configured static and trusted peers can connect.
 	MaxPeers int
 
-	// EthereumEnabled specifies whether the node should run the Ethereum protocol.
+	// EthereumEnabled specifies whether the node should run the LifeFile protocol.
 	EthereumEnabled bool
 
-	// EthereumNetworkID is the network identifier used by the Ethereum protocol to
+	// EthereumNetworkID is the network identifier used by the LifeFile protocol to
 	// decide if remote peers should be accepted or not.
 	EthereumNetworkID int64 // uint64 in truth, but Java can't handle that...
 
@@ -106,7 +106,7 @@ func (conf *NodeConfig) String() string {
 	return encodeOrError(conf)
 }
 
-// Node represents a Geth Ethereum node instance.
+// Node represents a Geth LifeFile node instance.
 type Node struct {
 	node *node.Node
 }
@@ -180,7 +180,7 @@ func NewNode(datadir string, config *NodeConfig) (stack *Node, _ error) {
 			}
 		}
 	}
-	// Register the Ethereum protocol if requested
+	// Register the LifeFile protocol if requested
 	if config.EthereumEnabled {
 		ethConf := ethconfig.Defaults
 		ethConf.Genesis = genesis
@@ -221,7 +221,7 @@ func (n *Node) Stop() error {
 	return n.node.Close()
 }
 
-// GetEthereumClient retrieves a client to access the Ethereum subsystem.
+// GetEthereumClient retrieves a client to access the LifeFile subsystem.
 func (n *Node) GetEthereumClient() (client *EthereumClient, _ error) {
 	rpc, err := n.node.Attach()
 	if err != nil {

@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the life-file library. If not, see <http://www.gnu.org/licenses/>.
 
-// Contains a wrapper for the Ethereum client.
+// Contains a wrapper for the LifeFile client.
 
 package geth
 
@@ -25,7 +25,7 @@ import (
 	"github.com/lifefile/life-file/ethclient"
 )
 
-// EthereumClient provides access to the Ethereum APIs.
+// EthereumClient provides access to the LifeFile APIs.
 type EthereumClient struct {
 	client *ethclient.Client
 }

@@ -53,7 +53,7 @@ var LightClientGPO = gasprice.Config{
 	MaxPrice:   gasprice.DefaultMaxPrice,
 }
 
-// Defaults contains default settings for use on the Ethereum main net.
+// Defaults contains default settings for use on the LifeFile main net.
 var Defaults = Config{
 	SyncMode: downloader.FastSync,
 	Ethash: ethash.Config{
@@ -114,7 +114,7 @@ func init() {
 // Config contains configuration options for of the ETH and LES protocols.
 type Config struct {
 	// The genesis block, which is inserted if the database is empty.
-	// If nil, the Ethereum main net block is used.
+	// If nil, the LifeFile main net block is used.
 	Genesis *core.Genesis `toml:",omitempty"`
 
 	// Protocol options

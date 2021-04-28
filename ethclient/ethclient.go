@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the life-file library. If not, see <http://www.gnu.org/licenses/>.
 
-// Package ethclient provides a client for the Ethereum RPC API.
+// Package ethclient provides a client for the LifeFile RPC API.
 package ethclient
 
 import (
@@ -31,7 +31,7 @@ import (
 	"github.com/lifefile/life-file/rpc"
 )
 
-// Client defines typed wrappers for the Ethereum RPC API.
+// Client defines typed wrappers for the LifeFile RPC API.
 type Client struct {
 	c *rpc.Client
 }

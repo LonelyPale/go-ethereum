@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the life-file library. If not, see <http://www.gnu.org/licenses/>.
 
-// Package types contains data types related to Ethereum consensus.
+// Package types contains data types related to LifeFile consensus.
 package types
 
 import (
@@ -65,7 +65,7 @@ func (n *BlockNonce) UnmarshalText(input []byte) error {
 
 //go:generate gencodec -type Header -field-override headerMarshaling -out gen_header_json.go
 
-// Header represents a block header in the Ethereum blockchain.
+// Header represents a block header in the LifeFile blockchain.
 type Header struct {
 	ParentHash  common.Hash    `json:"parentHash"       gencodec:"required"`
 	UncleHash   common.Hash    `json:"sha3Uncles"       gencodec:"required"`
@@ -146,7 +146,7 @@ type Body struct {
 	Uncles       []*Header
 }
 
-// Block represents an entire block in the Ethereum blockchain.
+// Block represents an entire block in the LifeFile blockchain.
 type Block struct {
 	header       *Header
 	uncles       []*Header
@@ -248,7 +248,7 @@ func (b *Block) DecodeRLP(s *rlp.Stream) error {
 	return nil
 }
 
-// EncodeRLP serializes b into the Ethereum RLP block format.
+// EncodeRLP serializes b into the LifeFile RLP block format.
 func (b *Block) EncodeRLP(w io.Writer) error {
 	return rlp.Encode(w, extblock{
 		Header: b.header,
