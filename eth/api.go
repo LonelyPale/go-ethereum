@@ -40,13 +40,13 @@ import (
 	"github.com/lifefile/life-file/trie"
 )
 
-// PublicEthereumAPI provides an API to access LifeFile full node-related
+// PublicLifeFileAPI provides an API to access LifeFile full node-related
 // information.
 type PublicEthereumAPI struct {
 	e *LifeFile
 }
 
-// NewPublicEthereumAPI creates a new LifeFile protocol API for full nodes.
+// NewPublicLifeFileAPI creates a new LifeFile protocol API for full nodes.
 func NewPublicEthereumAPI(e *LifeFile) *PublicEthereumAPI {
 	return &PublicEthereumAPI{e}
 }

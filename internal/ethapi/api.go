@@ -48,13 +48,13 @@ import (
 	"github.com/tyler-smith/go-bip39"
 )
 
-// PublicEthereumAPI provides an API to access LifeFile related information.
+// PublicLifeFileAPI provides an API to access LifeFile related information.
 // It offers only methods that operate on public data that is freely available to anyone.
 type PublicEthereumAPI struct {
 	b Backend
 }
 
-// NewPublicEthereumAPI creates a new LifeFile protocol API.
+// NewPublicLifeFileAPI creates a new LifeFile protocol API.
 func NewPublicEthereumAPI(b Backend) *PublicEthereumAPI {
 	return &PublicEthereumAPI{b}
 }

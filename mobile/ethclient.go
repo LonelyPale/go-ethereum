@@ -25,12 +25,12 @@ import (
 	"github.com/lifefile/life-file/ethclient"
 )
 
-// EthereumClient provides access to the LifeFile APIs.
+// LifeFileClient provides access to the LifeFile APIs.
 type EthereumClient struct {
 	client *ethclient.Client
 }
 
-// NewEthereumClient connects a client to the given URL.
+// NewLifeFileClient connects a client to the given URL.
 func NewEthereumClient(rawurl string) (client *EthereumClient, _ error) {
 	rawClient, err := ethclient.Dial(rawurl)
 	return &EthereumClient{rawClient}, err

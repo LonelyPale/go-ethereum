@@ -490,7 +490,7 @@ func NewTester(notify []string, noverify bool) *Ethash {
 }
 
 // NewFaker creates a ethash consensus engine with a fake PoW scheme that accepts
-// all blocks' seal as valid, though they still have to conform to the Ethereum
+// all blocks' seal as valid, though they still have to conform to the LifeFile
 // consensus rules.
 func NewFaker() *Ethash {
 	return &Ethash{

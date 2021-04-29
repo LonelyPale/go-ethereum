@@ -49,22 +49,22 @@ type NodeConfig struct {
 	// set to zero, then only the configured static and trusted peers can connect.
 	MaxPeers int
 
-	// EthereumEnabled specifies whether the node should run the LifeFile protocol.
+	// LifeFileEnabled specifies whether the node should run the LifeFile protocol.
 	EthereumEnabled bool
 
-	// EthereumNetworkID is the network identifier used by the LifeFile protocol to
+	// LifeFileNetworkID is the network identifier used by the LifeFile protocol to
 	// decide if remote peers should be accepted or not.
 	EthereumNetworkID int64 // uint64 in truth, but Java can't handle that...
 
-	// EthereumGenesis is the genesis JSON to use to seed the blockchain with. An
+	// LifeFileGenesis is the genesis JSON to use to seed the blockchain with. An
 	// empty genesis state is equivalent to using the mainnet's state.
 	EthereumGenesis string
 
-	// EthereumDatabaseCache is the system memory in MB to allocate for database caching.
+	// LifeFileDatabaseCache is the system memory in MB to allocate for database caching.
 	// A minimum of 16MB is always reserved.
 	EthereumDatabaseCache int
 
-	// EthereumNetStats is a netstats connection string to use to report various
+	// LifeFileNetStats is a netstats connection string to use to report various
 	// chain, transaction and node stats to a monitoring server.
 	//
 	// It has the form "nodename:secret@host:port"
@@ -221,7 +221,7 @@ func (n *Node) Stop() error {
 	return n.node.Close()
 }
 
-// GetEthereumClient retrieves a client to access the LifeFile subsystem.
+// GetLifeFileClient retrieves a client to access the LifeFile subsystem.
 func (n *Node) GetEthereumClient() (client *EthereumClient, _ error) {
 	rpc, err := n.node.Attach()
 	if err != nil {

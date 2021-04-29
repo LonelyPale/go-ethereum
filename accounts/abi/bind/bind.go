@@ -17,7 +17,7 @@
 // Package bind generates LifeFile contract Go bindings.
 //
 // Detailed usage document and tutorial available on the life-file Wiki page:
-// https://github.com/lifefile/life-file/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
+// https://github.com/lifefile/life-file/wiki/Native-DApps:-Go-bindings-to-LifeFile-contracts
 package bind
 
 import (
