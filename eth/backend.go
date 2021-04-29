@@ -56,7 +56,7 @@ import (
 	"github.com/lifefile/life-file/rpc"
 )
 
-// Config contains the configuration options of the ETH protocol.
+// Config contains the configuration options of the LFT protocol.
 // Deprecated: use ethconfig.Config instead.
 type Config = ethconfig.Config
 

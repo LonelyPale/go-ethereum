@@ -1758,7 +1758,7 @@ if (typeof XMLHttpRequest === 'undefined') {
  */
 
 
-/// required to define ETH_BIGNUMBER_ROUNDING_MODE
+/// required to define LFT_BIGNUMBER_ROUNDING_MODE
 var BigNumber = require('bignumber.js');
 
 var ETH_UNITS = [
