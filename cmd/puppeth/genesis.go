@@ -314,7 +314,7 @@ type parityChainSpecPricing struct {
 	Linear *parityChainSpecLinearPricing `json:"linear,omitempty"`
 	ModExp *parityChainSpecModExpPricing `json:"modexp,omitempty"`
 
-	// Before the https://github.com/paritytech/parity-ethereum/pull/11039,
+	// Before the https://github.com/paritytech/parity-lifefile/pull/11039,
 	// Parity uses this format to config bn pairing price policy.
 	AltBnPairing *parityChainSepcAltBnPairingPricing `json:"alt_bn128_pairing,omitempty"`
 
@@ -607,7 +607,7 @@ type pyEthereumGenesisSpec struct {
 // newPyEthereumGenesisSpec converts a life-file genesis block into a Parity specific
 // chain specification format.
 func newPyEthereumGenesisSpec(network string, genesis *core.Genesis) (*pyEthereumGenesisSpec, error) {
-	// Only ethash is currently supported between life-file and pyethereum
+	// Only ethash is currently supported between life-file and pylifefile
 	if genesis.Config.Ethash == nil {
 		return nil, errors.New("unsupported consensus engine")
 	}

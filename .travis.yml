@@ -20,7 +20,7 @@ jobs:
       env:
         - lint
       git:
-        submodules: false # avoid cloning ethereum/tests
+        submodules: false # avoid cloning lifefile/tests
       script:
         - go run build/ci.go lint
 
@@ -34,7 +34,7 @@ jobs:
         - ubuntu-ppa
         - GO111MODULE=on
       git:
-        submodules: false # avoid cloning ethereum/tests
+        submodules: false # avoid cloning lifefile/tests
       addons:
         apt:
           packages:
@@ -59,7 +59,7 @@ jobs:
         - azure-linux
         - GO111MODULE=on
       git:
-        submodules: false # avoid cloning ethereum/tests
+        submodules: false # avoid cloning lifefile/tests
       addons:
         apt:
           packages:
@@ -96,7 +96,7 @@ jobs:
         - azure-linux-mips
         - GO111MODULE=on
       git:
-        submodules: false # avoid cloning ethereum/tests
+        submodules: false # avoid cloning lifefile/tests
       script:
         - go run build/ci.go xgo --alltools -- --targets=linux/mips --ldflags '-extldflags "-static"' -v
         - for bin in build/bin/*-linux-mips; do mv -f "${bin}" "${bin/-linux-mips/}"; done
@@ -128,7 +128,7 @@ jobs:
         - maven-android
         - GO111MODULE=on
       git:
-        submodules: false # avoid cloning ethereum/tests
+        submodules: false # avoid cloning lifefile/tests
       before_install:
         # Install Android and it's dependencies manually, Travis is stale
         - export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
@@ -163,7 +163,7 @@ jobs:
         - cocoapods-ios
         - GO111MODULE=on
       git:
-        submodules: false # avoid cloning ethereum/tests
+        submodules: false # avoid cloning lifefile/tests
       script:
         - go run build/ci.go install -dlgo
         - go run build/ci.go archive -type tar -signer OSX_SIGNING_KEY -signify SIGNIFY_KEY -upload gethstore/builds
@@ -224,6 +224,6 @@ jobs:
         - azure-purge
         - GO111MODULE=on
       git:
-        submodules: false # avoid cloning ethereum/tests
+        submodules: false # avoid cloning lifefile/tests
       script:
         - go run build/ci.go purge -store gethstore/builds -days 14
