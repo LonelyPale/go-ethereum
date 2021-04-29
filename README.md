@@ -1,4 +1,4 @@
-## Go LifeFile
+## LifeFile
 
 Official Golang implementation of the LifeFile protocol.
 

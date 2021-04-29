@@ -1,6 +1,6 @@
-## EIP-2930 testing
+## LIP-2930 testing
 
-This test contains testcases for EIP-2930, which uses transactions with access lists. 
+This test contains testcases for LIP-2930, which uses transactions with access lists. 
 
 ### Prestate
 
