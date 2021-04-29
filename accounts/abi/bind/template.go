@@ -91,7 +91,7 @@ import (
 	"math/big"
 	"strings"
 
-	ethereum "github.com/lifefile/life-file"
+	lifefile "github.com/lifefile/life-file"
 	"github.com/lifefile/life-file/accounts/abi"
 	"github.com/lifefile/life-file/accounts/abi/bind"
 	"github.com/lifefile/life-file/common"

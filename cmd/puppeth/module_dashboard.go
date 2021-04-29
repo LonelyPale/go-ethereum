@@ -208,7 +208,7 @@ var dashboardContent = `
 											<pre>geth --datadir=$HOME/.{{.Network}} init {{.GethGenesis}}</pre>
 										</p>
 										<p>With your local chain initialized, you can start the LifeFile Wallet:
-											<pre>ethereumwallet --rpc $HOME/.{{.Network}}/geth.ipc --node-networkid={{.NetworkID}} --node-datadir=$HOME/.{{.Network}}{{if .Ethstats}} --node-ethstats='{{.Ethstats}}'{{end}} --node-bootnodes={{.BootnodesFlat}}</pre>
+											<pre>lifefilewallet --rpc $HOME/.{{.Network}}/geth.ipc --node-networkid={{.NetworkID}} --node-datadir=$HOME/.{{.Network}}{{if .Ethstats}} --node-ethstats='{{.Ethstats}}'{{end}} --node-bootnodes={{.BootnodesFlat}}</pre>
 										<p>
 										<br/>
 										<p>You can download the LifeFile Wallet from <a href="https://github.com/lifefile/mist/releases" target="about:blank">https://github.com/lifefile/mist/releases</a>.</p>
@@ -333,11 +333,11 @@ try! node?.start();
 									<div class="x_content">
 										<p>C++ LifeFile is the third most popular of the LifeFile clients, focusing on code portability to a broad range of operating systems and hardware. The client is currently a full node with transaction processing based synchronization.</p>
 										<br/>
-										<p>To run a cpp-ethereum node, download <a href="/{{.CppGenesis}}"><code>{{.CppGenesis}}</code></a> and start the node with:
+										<p>To run a cpp-lifefile node, download <a href="/{{.CppGenesis}}"><code>{{.CppGenesis}}</code></a> and start the node with:
 											<pre>eth --config {{.CppGenesis}} --datadir $HOME/.{{.Network}} --peerset "{{.CppBootnodes}}"</pre>
 										</p>
 										<br/>
-										<p>You can find cpp-ethereum at <a href="https://github.com/lifefile/cpp-ethereum/" target="about:blank">https://github.com/lifefile/cpp-ethereum/</a>.</p>
+										<p>You can find cpp-lifefile at <a href="https://github.com/lifefile/cpp-lifefile/" target="about:blank">https://github.com/lifefile/cpp-lifefile/</a>.</p>
 									</div>
 								</div>
 							</div>

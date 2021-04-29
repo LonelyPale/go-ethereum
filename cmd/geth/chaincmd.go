@@ -165,7 +165,7 @@ The export-preimages command export hash preimages to an RLP encoded stream`,
 		Category: "BLOCKCHAIN COMMANDS",
 		Description: `
 The arguments are interpreted as block numbers or hashes.
-Use "ethereum dump 0" to dump the genesis block.`,
+Use "lifefile dump 0" to dump the genesis block.`,
 	}
 )
 
